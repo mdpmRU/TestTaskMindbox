@@ -35,5 +35,13 @@ namespace TestGeometricLibrary
             bool triangleSquarenessExpectation = true;
             Assert.Equal(triangleSquarenessExpectation, triangleService.Squareness—heck(triangle));
         }
+
+        [Fact]
+        public void TestExistenceTriangle()
+        {
+            double[] sides = { 114, 24, 25 };
+            var triangle = new Triangle(sides);
+
+        }
     }
 }
